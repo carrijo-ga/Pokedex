@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeDex</title>
-    <script src="src/js/setup.js"></script>
-    <script src="src/js/pokemon-list.js"></script>
-    <script src="src/js/pokemon-info.js"></script>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="stylesheet" href="src/css/animations.css">
-    <link rel="stylesheet" href="src/css/pokemon.css">
-    <link rel="stylesheet" href="src/css/navigation.css">
+    <script src="assets/js/setup.js"></script>
+    <script src="assets/js/pokemon-list.js"></script>
+    <script src="assets/js/pokemon-info.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/pokemon.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
@@ -20,7 +20,7 @@
 <body onload="getAllNames()" class="row">
     <!--Setup Loading Div-->
     <div id="loading-div">
-        <img src="src/img/pokeball-icon.png" class="loading-ball">
+        <img src="assets/src/pokeball-icon.png" class="loading-ball">
     </div>
 
     <!--Search Bar and render search pokemon-->
@@ -52,13 +52,13 @@
     <!--responsive current pokemon-->
     <div id="current-pokemon-responsive-background" class="hide"></div>
     <div id="current-pokemon-responsive-close" class="hide" onclick="closePokemonInfo()"><img
-            src="src/img/close-icon.png"></div>
+            src="assets/src/close-icon.png"></div>
 
     <!--current selected pokemon-->
     <div id="current-pokemon-container" class="container column center">
 
 
-        <img id="current-pokemon-image" src="src/img/no-pokemon-selected-image.png">
+        <img id="current-pokemon-image" src="assets/src/no-pokemon-selected-image.png">
 
         <!--Info-->
         <div id="current-pokemon-info" class="hide">
@@ -148,15 +148,15 @@
                 <h4>Evolution</h4>
                 <div class="row center">
                     <img id="current-pokemon-evolution-0" class="current-pokemon-evolution-image"
-                        src="src/img/pokeball-icon.png">
+                        src="assets/src/pokeball-icon.png">
                     <div id="current-pokemon-evolution-level-0"
                         class="current-pokemon-evolution-level-container font-size-12 bold">Lv. 16</div>
                     <img id="current-pokemon-evolution-1" class="current-pokemon-evolution-image"
-                        src="src/img/pokeball-icon.png">
+                        src="assets/src/pokeball-icon.png">
                     <div id="current-pokemon-evolution-level-1"
                         class="current-pokemon-evolution-level-container font-size-12 bold">Lv. 36</div>
                     <img id="current-pokemon-evolution-2" class="current-pokemon-evolution-image"
-                        src="src/img/pokeball-icon.png">
+                        src="assets/src/pokeball-icon.png">
                 </div>
             </div>
         </div>
@@ -169,11 +169,11 @@
 
     <!--Back to top button-->
     <div id="back-to-top-button" class="hide" onclick="backToTop()">
-        <img src="src/img/arrow-up-icon.png">
+        <img src="assets/src/arrow-up-icon.png">
     </div>
 
     <!--Loading selected pokemon-->
-    <img id="current-pokemon-loading" src="src/img/pokeball-icon.png" class="loading-ball">
+    <img id="current-pokemon-loading" src="assets/src/pokeball-icon.png" class="loading-ball">
 
 </body>
 
